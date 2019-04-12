@@ -72,7 +72,7 @@ var rpsGame = {
 
 
 $(document).ready(function () {
-    
+
     $("#middle-section-greeting").hide();
     playersRef.on("value", function (snapshot) {
         // Check for existence of player 1 in the database
@@ -278,10 +278,10 @@ $(document).ready(function () {
         }
         if (snapshot.key === "player1" && playersName === queuedPlayers[0].name) {
             player1left();
-        } 
+        }
         if (snapshot.key === "player2" && playersName === queuedPlayers[0].name) {
             player2left();
-        } 
+        }
         // if (!player1 || !player2 && playersName !== null) {
         //     queuedPlayers.shift();
         //     console.log(queuedPlayers)
@@ -562,7 +562,7 @@ $(document).ready(function () {
 // $(document).ready(function(){
 //     gameRef = database.ref().child('Players');
 
-    
+
 
 
 
